@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // Tạo ra 1 element bằng React với cấu trúc khi hiển thị lên DOM như sau:
+        /**
+         * <div class='container'>
+         *      <h1 class='title'>React basic training</h1>
+         *      <ul>
+         *          <li class='topic'>Topic 1 - React core</li>
+         *          <li class='topic'>Topic 2 - Setting a ReactApp in NodeJS</li>
+         *      </ul>
+         * </div>
+         */
+
+        // const div = React.createElement(
+        //     'div',
+        //     {className: 'container'},
+        //     React.createElement(
+        //         'h1',
+        //         {className: 'title'},
+        //         'React basic training'
+        //     ),
+        //     React.createElement(
+        //         'ul',
+        //         null,
+        //         React.createElement(
+        //             'li',
+        //             {className: 'topic'},
+        //             'Topic 1 - React core'
+        //         ),
+        //         React.createElement(
+        //             'li',
+        //             {className: 'topic'},
+        //             'Topic 2 - Setting a ReactApp in NodeJS'
+        //         )
+        //     )
+        // )
+
+        const div = (
+            <div class='container'>
+                <h1 class='title'>React basic training</h1>
+                <ul>
+                    <li class='topic'>Topic 1 - React core</li>
+                    <li class='topic'>Topic 2 - Setting a ReactApp in NodeJS</li>
+                </ul>
+            </div>
+        )
+
+        // Gắn element mới tạo trên Virtual DOM lên DOM để hiển thị
+        const app = ReactDOM.createRoot(document.getElementById('root'))
+        app.render(div)
+    </script>
+</body>
+
+</html>
