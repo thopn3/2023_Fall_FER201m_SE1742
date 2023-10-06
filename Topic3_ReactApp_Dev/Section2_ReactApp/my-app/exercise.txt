@@ -1,0 +1,11 @@
+Yêu cầu:
+Viết 1 component đặt tên là Category gồm có 1 property nhận dữ liệu là 1 mảng cac Category gồm:
+    id:int
+    name: String
+
+Gọi component này trong App.js cùng với component product
+=> Hiển thị danh sách các Category theo name
+
+Nâng cao:
+Khi người dùng click vào Name của Category thì dữ liệu của Product sẽ filter theo
+Hint: Sử dụng kỹ thuật Router

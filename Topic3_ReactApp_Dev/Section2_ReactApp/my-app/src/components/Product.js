@@ -9,4 +9,16 @@ function Product({id, name, price, image}){
     )
 }
 
+function ProductList({data=[]}){
+    return (
+        <div className="container">
+            {
+                data.map(({id, name, price, image})=>(
+                    <Product id={id} name={name} price={price} image={image}/>
+                ))
+            }
+        </div>
+    )
+}
 
+export default ProductList
