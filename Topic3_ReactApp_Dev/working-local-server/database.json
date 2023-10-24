@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone X",
+      "price": 10,
+      "catId": 1
+    },
+    {
+      "id": 2,
+      "name": "Iphone 15 ProMax",
+      "price": 100,
+      "catId": 1
+    },
+    {
+      "id": 3,
+      "name": "Iphone 15 Pro",
+      "price": 99,
+      "catId": 1
+    },
+    {
+      "id": 4,
+      "name": "HP Pavilion",
+      "price": 10,
+      "catId": 2
+    },
+    {
+      "name": "AAAA",
+      "price": 12,
+      "catId": 1,
+      "id": 5
+    },
+    {
+      "name": "BBBB",
+      "price": 34,
+      "catId": 1,
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Smart phone"
+    },
+    {
+      "id": 2,
+      "name": "Laptop"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "title": "Vote 4 Iphone X",
+      "text": "....",
+      "pId": 1
+    },
+    {
+      "id": 2,
+      "title": "Vote 4 Iphone",
+      "text": "....",
+      "pId": 1
+    },
+    {
+      "id": 3,
+      "title": "Vote Laptop",
+      "text": "....",
+      "pId": 4
+    }
+  ]
+}
